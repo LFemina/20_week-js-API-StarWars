@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.logo {
+    width: 6rem;
+}
+
+#request {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 70%;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.reqItems {
+    font-size: 20px;
+}
+
+#label {
+    font-size: 28px;
+    font-weight: bolder;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#entity {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#idNum {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#fetchBtn {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: goldenrod;
+    border-color: black;
+    border-width: 4px;
+    font-weight: bold;
+}
+
+.result {
+    font-weight: bolder;
+    font-size: 36px;
+    color: goldenrod;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 26px;
+}

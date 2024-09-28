@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>StarWars</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="./StarWarsOpeningLogo.svg" class="logo" logo="StarWars">
+            <h1>Вселенная <i>"Звёздных войн"</i></h1>
+        </div>
+        <div id="request">
+            <label id="label" for="entity" class="reqItems">Кого или что будем искать?</label>
+            <select name="select" id="entity" class="reqItems">
+                <option value="films">Фильм</option>
+                <option value="people">Люди</option>
+                <option value="planets">Планеты</option>
+                <option value="starships">Космические корабли</option>
+            </select>
+            <label for="idNum" class="reqItems"></label>
+            <input type="number" name="idNum" id="idNum" min="1" max="10" class="reqItems">
+            <button id="fetchBtn" class="reqItems">Вперёд!</button>
+        </div>
+
+        <div id="loading" style="display: none;" class="reqItems">Идёт загрузка...</div>
+        <div id="result" class="result"></div>
+        <div id="error" class="error" class="reqItems"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
